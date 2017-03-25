@@ -1,9 +1,9 @@
 {
-  "name": "licensewatch-cli",
-  "version": "1.0.1",
+  "name": "licenseye",
+  "version": "1.0.2",
   "description": "Node.js CLI tool to visualize an aggregate list of your dependencies' licenses Edit Add topics",
   "main": "index.js",
-  "repository": "git@github.com:lirantal/licensewatch-cli.git",
+  "repository": "git@github.com:lirantal/licenseye.git",
   "author": "Liran Tal <liran.tal@gmail.com>",
   "license": "MIT",
   "keywords": [
