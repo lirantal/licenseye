@@ -1,6 +1,6 @@
 {
   "name": "licenseye",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js CLI tool to visualize an aggregate list of your dependencies' licenses Edit Add topics",
   "main": "index.js",
   "repository": "git@github.com:lirantal/licenseye.git",
@@ -17,7 +17,7 @@
     "start": "node index.js"
   },
   "bin": {
-    "licensewatch-cli": "./index.js"
+    "licenseye": "./index.js"
   },
   "dependencies": {
     "bars": "jstrace/bars",
