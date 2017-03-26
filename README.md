@@ -2,7 +2,7 @@
 
 <img src="https://cdn.rawgit.com/lirantal/licenseye/4ce1a1ce/logo43.svg" height="30px"> Node.js CLI tool to visualize an aggregate list of your dependencies' licenses Edit Add topics
 
-![licenseye-screencast](https://media.giphy.com/media/12lQsvkKJu9wNG/giphy.gif)
+![licenseye-screencast](https://media.giphy.com/media/y1D0SLr9kQ9l6/giphy.gif)
 
 # Install
 
