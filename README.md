@@ -6,8 +6,14 @@
 
 # Install
 
+#### Yarn
 ```bash
 yarn global add licenseye
+```
+
+#### NPM
+```bash
+npm i licenseye
 ```
 
 # Usage
