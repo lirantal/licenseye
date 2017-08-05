@@ -1,6 +1,12 @@
 # licenseye
 
-<img src="https://cdn.rawgit.com/lirantal/licenseye/4ce1a1ce/logo43.svg" height="30px"> Node.js CLI tool to visualize an aggregate list of your project's dependencies' licenses.
+[![view on npm](http://img.shields.io/npm/v/licenseye.svg)](https://www.npmjs.org/package/licenseye)
+[![view on npm](http://img.shields.io/npm/l/licenseye.svg)](https://www.npmjs.org/package/licenseye)
+[![npm module downloads](http://img.shields.io/npm/dt/licenseye.svg)](https://www.npmjs.org/package/licenseye)
+[![Dependency Status](https://david-dm.org/lirantal/licenseye.svg)](https://david-dm.org/lirantal/licenseye)
+[![Build Status](https://travis-ci.org/lirantal/licenseye.svg?branch=master)](https://travis-ci.org/lirantal/licenseye)
+
+Node.js CLI tool to visualize an aggregate list of your project's dependencies' licenses.
 
 ![licenseye-screencast](https://media.giphy.com/media/y1D0SLr9kQ9l6/giphy.gif)
 
@@ -13,7 +19,7 @@ yarn global add licenseye
 
 #### NPM
 ```bash
-npm i licenseye
+npm install -g licenseye
 ```
 
 # Usage
