@@ -26,7 +26,7 @@
     "bars": "jstrace/bars",
     "chalk": "^2.0.1",
     "figures": "^2.0.0",
-    "licensewatch": "^1.0.0",
+    "licensewatch": "^2.0.0",
     "ora": "^1.2.0"
   },
   "devDependencies": {
