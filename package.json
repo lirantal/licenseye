@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "prepublish": "npm run build",
-    "test": "standard",
+    "test": "standard index.js",
     "lintFix": "standard --fix",
     "start": "node index.js",
     "build": "babel index.js -o dist.js"
