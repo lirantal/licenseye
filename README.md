@@ -3,7 +3,6 @@
 [![view on npm](http://img.shields.io/npm/v/licenseye.svg)](https://www.npmjs.org/package/licenseye)
 [![view on npm](http://img.shields.io/npm/l/licenseye.svg)](https://www.npmjs.org/package/licenseye)
 [![npm module downloads](http://img.shields.io/npm/dt/licenseye.svg)](https://www.npmjs.org/package/licenseye)
-[![Dependency Status](https://david-dm.org/lirantal/licenseye.svg)](https://david-dm.org/lirantal/licenseye)
 [![Build Status](https://travis-ci.org/lirantal/licenseye.svg?branch=master)](https://travis-ci.org/lirantal/licenseye)
 
 Node.js CLI tool to visualize an aggregate list of your project's dependencies' licenses.
