@@ -2,10 +2,7 @@
   "name": "licenseye",
   "version": "1.0.5",
   "description": "Node.js CLI tool to visualize an aggregate list of your dependencies' licenses Edit Add topics",
-  "main": "index.js",
-  "engines": {
-    "node": ">=7.6"
-  },
+  "main": "dist.js",
   "repository": "git@github.com:lirantal/licenseye.git",
   "author": "Liran Tal <liran.tal@gmail.com>",
   "license": "MIT",
@@ -16,21 +13,26 @@
     "shell"
   ],
   "scripts": {
-    "test": "standard",
+    "prepublish": "npm run build",
+    "test": "standard index.js",
     "lintFix": "standard --fix",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "babel index.js -o dist.js"
   },
   "bin": {
-    "licenseye": "./index.js"
+    "licenseye": "./dist.js"
   },
   "dependencies": {
     "bars": "jstrace/bars",
     "chalk": "^2.0.1",
     "figures": "^2.0.0",
-    "licensewatch": "^1.0.0",
+    "licensewatch": "^2.0.0",
     "ora": "^1.2.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "standard": "^10.0.2"
   }
 }
