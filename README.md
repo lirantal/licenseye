@@ -1,5 +1,7 @@
 # licenseye
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lirantal/licenseye.svg)](https://greenkeeper.io/)
+
 [![view on npm](http://img.shields.io/npm/v/licenseye.svg)](https://www.npmjs.org/package/licenseye)
 [![view on npm](http://img.shields.io/npm/l/licenseye.svg)](https://www.npmjs.org/package/licenseye)
 [![npm module downloads](http://img.shields.io/npm/dt/licenseye.svg)](https://www.npmjs.org/package/licenseye)
