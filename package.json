@@ -23,7 +23,7 @@
     "licenseye": "./dist.js"
   },
   "dependencies": {
-    "bars": "jstrace/bars",
+    "bars": "1.5.0",
     "chalk": "^2.0.1",
     "figures": "^2.0.0",
     "licensewatch": "^2.0.0",
