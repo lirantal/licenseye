@@ -1934,9 +1934,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-licensewatch@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/licensewatch/-/licensewatch-2.0.0.tgz#8e191e81e89599b3953c03fa36f813992b1df899"
+licensewatch@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/licensewatch/-/licensewatch-2.0.1.tgz#197e682c7396e2c9785296d4c59a5960580e3ea0"
+  integrity sha512-g2dvM5ZapYMl78mlOdwq39ngRD7/x/RbChGu/58norsL47DThkdBCdX+Yx05V0C1Md5XHImT0/eOGb9TWQehKQ==
   dependencies:
     bluebird "^3.4.7"
     glob "^7.1.1"
