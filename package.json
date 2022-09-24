@@ -1,6 +1,6 @@
 {
   "name": "licenseye",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Node.js CLI tool to visualize an aggregate list of your dependencies' licenses Edit Add topics",
   "main": "dist.js",
   "repository": "git@github.com:lirantal/licenseye.git",
