@@ -38,3 +38,7 @@ $ licenseye
 # License
 
 MIT @ [Liran Tal](https://github.com/lirantal)
+
+## Contributing
+
+Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
