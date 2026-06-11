@@ -1,8 +1,4 @@
 {
-  "publishConfig": {
-    "provenance": true,
-    "access": "public"
-  },
   "name": "licenseye",
   "version": "2.0.3",
   "description": "Node.js CLI tool to visualize an aggregate list of your dependencies' licenses Edit Add topics",
@@ -38,5 +34,9 @@
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "standard": "^11.0.0"
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
   }
 }
