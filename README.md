@@ -38,6 +38,10 @@ $ licenseye
 
 MIT @ [Liran Tal](https://github.com/lirantal)
 
+## Documentation
+
+- [Project documentation](./docs/README.md) - development, testing, architecture, and conventions.
+
 ## Contributing
 
 Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
