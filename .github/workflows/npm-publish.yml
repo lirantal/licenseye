@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: 24.x
           registry-url: https://registry.npmjs.org/
+      - name: Set up pinned npm
+        run: bash "${{ github.workspace }}/.github/scripts/setup-npm.sh"
       - run: yarn install --frozen-lockfile
       - run: yarn run build
       - run: yarn run test

@@ -30,5 +30,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+    - name: Set up pinned npm
+      run: bash "${{ github.workspace }}/.github/scripts/setup-npm.sh"
     - run: yarn install --frozen-lockfile
     - run: yarn run test
