@@ -2,7 +2,7 @@
 'use strict'
 
 const LicenseWatch = require('licensewatch')
-const bars = require('bars')
+const bars = require('./histogram')
 const figures = require('figures')
 const chalk = require('chalk')
 const ora = require('ora')

@@ -1,0 +1,44 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions: {}
+
+jobs:
+  release:
+    permissions:
+      contents: write       # to create release (changesets/action)
+      issues: write         # to post issue comments (changesets/action)
+      pull-requests: write  # to create pull request (changesets/action)
+      id-token: write       # to create release (changesets/action)
+      packages: write       # to publish to npm (changesets/action)
+    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24.x
+          cache: 'npm'
+      - name: Set up pinned npm
+        run: bash .github/scripts/setup-npm.sh
+      - name: install dependencies
+        run: npm ci
+      - name: build project
+        run: npm run build
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@63a615b9cd06ba9a3e6d13796c7fbcb080a60a0b # v1.8.0
+        with:
+          publish: npm run release
+          version: npm run version
+          commit: "chore: new release"
+          title: "chore: new release candidate"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
+          NPM_TOKEN: ''
