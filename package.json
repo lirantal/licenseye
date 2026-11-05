@@ -13,17 +13,21 @@
     "shell"
   ],
   "scripts": {
-    "prepublish": "npm run build",
-    "test": "standard index.js",
-    "lintFix": "standard --fix",
+    "test": "npm run build && node --test",
+    "lintFix": "npm run lint:fix",
     "start": "node index.js",
-    "build": "babel index.js -o dist.js"
+    "build": "babel index.js -o dist.js",
+    "prepublishOnly": "npm run build",
+    "lint": "standard index.js histogram.js test/*.js",
+    "lint:fix": "standard index.js histogram.js test/*.js --fix",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "release:create": "changeset"
   },
   "bin": {
     "licenseye": "./dist.js"
   },
   "dependencies": {
-    "bars": "jstrace/bars",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "chalk": "^2.0.1",
@@ -33,7 +37,9 @@
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
-    "standard": "^11.0.0"
+    "standard": "^11.0.0",
+    "@changesets/cli": "^2.31.0",
+    "@changesets/changelog-github": "^0.6.0"
   },
   "publishConfig": {
     "provenance": true,
@@ -42,5 +48,11 @@
   "engines": {
     "node": ">=24.0.0",
     "npm": ">=11.10.0"
-  }
+  },
+  "packageManager": "npm@11.17.0",
+  "files": [
+    "dist.js",
+    "index.js",
+    "histogram.js"
+  ]
 }

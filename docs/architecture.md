@@ -6,6 +6,9 @@ licenseye package description: Node.js CLI tool to visualize an aggregate list o
 
 ## Repository Structure
 
+- `index.js` - CLI entry point; compiled to `dist.js` for publishing.
+- `histogram.js` - local formatter for license counts; keeps installs registry-only.
+- `test/` - formatter and CLI integration tests.
 - `package.json` - root package scripts and dependency metadata.
 - `.changeset/` - Changesets configuration and pending release notes.
 - `docs/` - project documentation for maintainers and coding agents.

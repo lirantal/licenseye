@@ -2,20 +2,29 @@
 
 ## Prerequisites
 
-- Node.js compatible with this repository's packages and tooling.
-- yarn for dependency installation and scripts.
+Use Node.js 24+ and npm 11.17.0, pinned in `package.json#packageManager`.
+Run `bash .github/scripts/setup-npm.sh` to install that exact npm version.
 
 ## Setup
 
 ```sh
-yarn install
+npm ci
+npm run build
 ```
 
-## Common Commands
+The `.npmrc` disables dependency lifecycle scripts and Git sources and requires
+releases to be at least 30 days old. Build explicitly after installation.
 
-- `pnpm build` - builds the project.
-- `pnpm test` - runs the test suite.
+## Common commands
 
-## Repository Notes
+- `npm run lint` checks source and tests without changing files.
+- `npm run lint:fix` fixes formatting.
+- `npm run build` compiles the CLI to `dist.js`.
+- `npm test` builds and runs the tests.
+- `npm start` runs the source CLI against the current directory.
 
-This repository is organized around the root package `licenseye`.
+Use npm for dependency changes and commit `package-lock.json`. Upgrade the npm
+pin in a maintenance PR, choose a release at least 30 days old, and rerun the
+checks. Keep `.npmrc` security policies enabled.
+
+See [RELEASE.md](../RELEASE.md) for Changesets and trusted publishing setup.

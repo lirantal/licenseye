@@ -60,7 +60,7 @@ This format drives changelog generation and release automation, so it matters mo
 ## Local development
 
 1. Fork and clone the repository.
-2. Install dependencies using the project's package manager (see `package.json`, or equivalent).
+2. Use Node.js 24+ and npm 11.17.0, then run `npm ci` (see [development setup](./docs/development.md)).
 3. Run the test suite to confirm a clean baseline before making changes.
 4. Run the linter and type checker (if configured) the same way.
 5. Make your change on a feature branch, commit using the format above, and open a PR.
