@@ -30,10 +30,10 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "chalk": "^2.0.1",
-    "figures": "^2.0.0",
+    "chalk": "^6.0.1",
+    "figures": "^6.1.0",
     "licensewatch": "^2.0.1",
-    "ora": "^2.0.0"
+    "ora": "^9.4.1"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
